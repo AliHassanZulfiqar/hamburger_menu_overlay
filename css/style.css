@@ -5,6 +5,7 @@
   --btn-color: rgba(81, 41, 130, 0.80);
   --secondary-color: rgba(129, 216, 208, 0.75);
   --overlay-color: rgba(55, 27, 88, 0.85);
+  --menu-speed: .65s;
 }
 
 * {
