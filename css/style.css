@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Playfair+Display&display=swap');
+
+:root {
+  --priamry-color: rgba(81, 41, 130, 0.40);
+  --btn-color: rgba(81, 41, 130, 0.80);
+  --secondary-color: rgba(129, 216, 208, 0.75);
+  --overlay-color: rgba(55, 27, 88, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+#showcase {
+  background: var(--priamry-color);
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+#showcase::before {
+  content: '';
+  background: url(../img/brian-mcgowan-0A450BR1JWk-unsplash.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+#showcase h1 {
+  font-size: 3rem;
+  margin-bottom: 1.4rem;
+  /* line-height: 1.5; */
+}
+
+#showcase p {
+  font-size: 1.3rem;
+  /* margin-bottom: 1rem; */
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  color: #fff;
+  background: var(--btn-color);
+  border: none;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
